@@ -1,0 +1,9 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 1em;
+    row-gap: 1em;
+    height: 95vh;
+    margin-top: 2.5vh;
+}

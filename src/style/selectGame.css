@@ -1,0 +1,21 @@
+#game-select {
+    margin: auto;
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#game-select h1 {
+    color: white;
+}
+
+#game-select > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#game-select select, #game-select option {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: 1em;
+}
