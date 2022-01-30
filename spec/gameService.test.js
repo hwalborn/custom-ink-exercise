@@ -59,12 +59,12 @@ describe('Game Service', () => {
 
     test('should update cards by id', () => {
         const flippedCards = [...mockCards];
-        flippedCards[0].isFlipped = false;
-        flippedCards[1].isFlipped = false;
+        flippedCards[0].isFlipped = true;
+        flippedCards[1].isFlipped = true;
         const id = flippedCards[0].id;
         const compareId = flippedCards[1].id;
         const updatedCards = gameService.handleDifferentCards(flippedCards, id, compareId);
-        expect(updatedCards[0].isFlipped).toBe(true);
-        expect(updatedCards[1].isFlipped).toBe(true);
+        expect(updatedCards[0].isFlipped).toBe(false);
+        expect(updatedCards[1].isFlipped).toBe(false);
     });
 })
